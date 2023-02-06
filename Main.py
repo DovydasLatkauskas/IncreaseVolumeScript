@@ -13,6 +13,3 @@ def change_volume(directory_path, scale_by):
                 scaled_audio = mono * scale_by
                 with AudioFile("out_" + audio_file, "w", f.samplerate) as o:
                     o.write(scaled_audio)
-
-change_volume("testFolder1", 2)
-print("Done!")
